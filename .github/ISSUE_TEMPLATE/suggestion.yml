@@ -1,0 +1,25 @@
+name: Suggestion
+description: Suggest a resource, lab, topic or improvement.
+title: "[Suggestion]: "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas are welcome, especially Azure, networking and cloud security resources.
+        **Do not include passwords, keys, tokens or personal information.**
+  - type: textarea
+    id: idea
+    attributes:
+      label: What do you suggest?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help?
+      description: What gap it fills or what it would improve.
+  - type: input
+    id: link
+    attributes:
+      label: Link (optional)
