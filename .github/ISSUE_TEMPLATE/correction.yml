@@ -1,0 +1,30 @@
+name: Correction
+description: Report a technical error, broken command, broken link or typo.
+title: "[Correction]: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the accuracy of this project.
+        **Do not include passwords, keys, tokens or personal information.** For security problems, use the Security tab instead.
+  - type: input
+    id: location
+    attributes:
+      label: Where is the problem?
+      description: File name and section or line, or a link to it.
+      placeholder: IP-Addressing-and-Subnetting.md, section 3.2
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Describe the error and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Supporting source (optional)
+      description: Documentation, an RFC or a Microsoft Learn link that backs up the correction.
